@@ -36,7 +36,14 @@ SECRET_KEY = 'django-insecure-wivbp(fe7)+3@(kcrn@c)&mb%(x49wljyu81)moqs+6d=9(=xr
 DEBUG = True
 
     
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'chat-point-2nkg.onrender.com/']
+
+CSRF_TRUSTED_ORIGINS = [ 'https://chat-point-2nkg.onrender.com/' ]
+
+INTERNAL_IPS = (
+    '127.0.0.1',
+    'localhost:8000'
+)
 
 
 # Application definition
