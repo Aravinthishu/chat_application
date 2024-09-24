@@ -36,7 +36,7 @@ SECRET_KEY = 'django-insecure-wivbp(fe7)+3@(kcrn@c)&mb%(x49wljyu81)moqs+6d=9(=xr
 DEBUG = True
 
     
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'chat-point-2nkg.onrender.com', '*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'chat-point-2nkg.onrender.com', ]
 
 CSRF_TRUSTED_ORIGINS = [ 'https://chat-point-2nkg.onrender.com/' ]
 
@@ -97,7 +97,7 @@ ROOT_URLCONF = 'a_core.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates/')],
+        'DIRS': [os.path.join(BASE_DIR, 'a_core/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
